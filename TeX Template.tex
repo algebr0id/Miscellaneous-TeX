@@ -1,0 +1,113 @@
+%preamble
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+%\usepackage{times} %font; can be changed (palatino, bookman, etc.)
+\usepackage{framed}
+\setlength\parindent{0pt}
+\usepackage{color} %for colored text, if needed
+\newtheorem{thm}{Theorem}
+\newtheorem{rem}{Remark}
+\newtheorem{cor}{Corollary}
+\newtheorem{lem}{Lemma}
+\newtheorem{defn}{Definition}
+\usepackage[margin=0.5in]{geometry} %margins
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{tcolorbox}
+\pagestyle{fancy}
+
+\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}} %page numbering
+
+
+\begin{document}
+
+%title
+\centerline{\huge{\bf{\LaTeX \ Template}}}
+\vspace{0.2in}
+\centerline{\large{Homework 1}}
+\vspace{0.1in}
+\centerline{Solutions written by [Name]}
+\vspace{0.3in}
+
+\begin{tcolorbox}
+\noindent \textsc{Exercise 1.} Prove something.
+\end{tcolorbox}
+
+
+\begin{proof}
+This is a proof. 
+\end{proof}
+
+\begin{rem}
+The above was a proof.
+\end{rem}
+
+\begin{defn}
+This is a definition.
+\end{defn}
+
+\begin{thm}
+This is a theorem.
+\end{thm}
+
+\begin{proof}
+This is a proof of the above theorem.
+
+\begin{lem}
+Theorems are almost always followed by a proof.
+\end{lem}
+
+\end{proof}
+
+\begin{cor}
+Proofs are fun to write. 
+\end{cor}
+
+
+\begin{framed}
+This is framed text. You can put something important inside here. 
+\end{framed}
+
+Here is some \textcolor{red}{red text}. We can also use \textcolor{orange}{orange text}, or possibly \textcolor{blue}{blue text}. How about \textcolor{purple}{purple text}?
+
+\vspace{0.1in} %vertical space between lines
+
+Here is an inline equation: $\displaystyle{\sum_{i = 0}^{n} i = \frac{n(n+1)}{2}}$. Did you know I can type in \texttt{courier}?
+
+\vspace{0.1in}
+
+Here is a piecewise function:
+
+$$
+|x| = \begin{cases}
+x & \text{if } x>0\\
+0 & \text{if } x=0\\
+-x& \text{if } x<0
+\end{cases}
+$$
+
+Here is a matrix:
+
+$$\mathbf{A} = \begin{pmatrix}  1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$$
+
+Here is a list:
+
+\begin{itemize}
+\item Here is an item.
+\item Here is another item.
+\end{itemize}
+
+Here is a \emph{numbered} list:
+
+\begin{enumerate}
+\item Here is an item.
+\item Here is another item.
+\end{enumerate}
+
+
+\end{document}
